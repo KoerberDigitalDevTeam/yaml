@@ -1,6 +1,6 @@
 {
   "name": "@koerber/yaml",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple extension to JS-YAML",
   "homepage": "https://github.com/KoerberDigitalDevTeam/yaml",
   "repository": "gith@github.com/KoerberDigitalDevTeam/yaml",
@@ -27,5 +27,8 @@
   },
   "peerDependencies": {
     "js-yaml": "^3.13.0"
-  }
+  },
+  "files": [
+    "lib/"
+  ]
 }
