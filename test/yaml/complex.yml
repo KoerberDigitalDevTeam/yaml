@@ -1,0 +1,17 @@
+---
+variables:
+  foo: &foo bar
+
+<<: !include complex1.yml
+
+nested_object:
+  <<: !include complex1.yml
+  extended: true
+
+array: !merge
+  - extra1
+  - !include complex2.yml
+  - - extra2a
+    - extra2b
+  - [ extra3a, extra3b ]
+  - !include complex1.yml

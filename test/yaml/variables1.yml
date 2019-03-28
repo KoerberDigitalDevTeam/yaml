@@ -1,0 +1,8 @@
+variables:
+  foo: &foo bar
+references:
+  foo: *foo
+included:
+  <<: !include variables2.yml
+  baz:
+

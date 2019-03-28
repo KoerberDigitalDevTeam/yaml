@@ -1,0 +1,29 @@
+{
+  "name": "@koerber/yaml",
+  "version": "0.0.1",
+  "description": "Simple extension to JS-YAML",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -e js,yml,json -x npm run build",
+    "test": "mocha -r 'test/_setup.js' 'test/**/*.test.js' || false",
+    "lint": "eslint --cache '.eslintrc.js' '**/*js'",
+    "lintfix": "eslint --cache '.eslintrc.js' '**/*js' --fix",
+    "coverage": "nyc --reporter=html --reporter=text npm run test",
+    "build": "npm run lint && npm run coverage"
+  },
+  "author": "Pier Fumagalli <pier.fumagalli@koerber.digital>",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.15.3",
+    "eslint-config-google": "^0.12.0",
+    "js-yaml": "^3.13.0",
+    "mocha": "^6.0.2",
+    "nodemon": "^1.18.10",
+    "nyc": "^13.3.0",
+    "source-map-support": "^0.5.11"
+  },
+  "peerDependencies": {
+    "js-yaml": "^3.13.0"
+  }
+}

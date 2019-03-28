@@ -1,0 +1,3 @@
+- included_first
+- included_second: *foo
+- included_third

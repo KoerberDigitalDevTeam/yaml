@@ -1,0 +1,5 @@
+.eslintcache
+.nyc_output/
+coverage/
+other.yml
+test.yml
