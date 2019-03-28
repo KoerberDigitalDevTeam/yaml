@@ -1,10 +1,15 @@
 {
   "name": "@koerber/yaml",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple extension to JS-YAML",
   "homepage": "https://github.com/KoerberDigitalDevTeam/yaml",
   "repository": "gith@github.com/KoerberDigitalDevTeam/yaml",
   "main": "index.js",
+  "keywords": [
+    "yaml",
+    "parser",
+    "include"
+  ],
   "scripts": {
     "dev": "nodemon -e js,yml,json -x npm run build",
     "test": "mocha -r 'test/_setup.js' 'test/**/*.test.js' || false",
