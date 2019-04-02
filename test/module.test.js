@@ -17,6 +17,7 @@ describe('Module Test', () => {
 
       /* Included straight with merge */
       foo_reference: 'bar',
+      joint_string: 'foobar',
       other: 'value',
       extended: false,
 
@@ -61,6 +62,9 @@ describe('Module Test', () => {
         other: 'value',
         extended: 'false',
       },
+
+      /* Joint string */
+      'joint_string': 'foobar',
 
       /* Nested object with inclusion */
       'nested_object': {

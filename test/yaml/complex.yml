@@ -8,6 +8,10 @@ nested_object:
   <<: !include complex1.yml
   extended: true
 
+joint_string: !join
+  - foo
+  - *foo
+
 array: !merge
   - extra1
   - !include complex2.yml
