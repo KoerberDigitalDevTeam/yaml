@@ -1,6 +1,6 @@
 {
   "name": "@koerber/yaml",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Simple extension to JS-YAML",
   "homepage": "https://github.com/KoerberDigitalDevTeam/yaml",
   "repository": "gith@github.com/KoerberDigitalDevTeam/yaml",
