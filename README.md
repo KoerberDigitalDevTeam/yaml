@@ -17,6 +17,8 @@ let parsed = parse('my_file.yml')
 An optional *second argument* to the `parse(...)` function allows to specify
 the base schema for parsing (defaulting to `DEFAULT_SAFE_SCHEMA)`.
 
+The module also exposes `dump(...)` as an alias to `js-yaml`'s `safeDump(...)`.
+
 
 The `!include` tag
 ------------------
@@ -122,6 +124,30 @@ Will be parsed as the following JSON:
 
 ```json
 [ "foo", "bar", "baz" ]
+```
+
+The `!join` tag
+----------------
+
+The `!join` tag joins array members into a string. For example:
+
+```yaml
+joined: !join
+  - One
+  - Two
+  - Three
+```
+
+Will be parsed as the following JSON:
+
+```json
+{ "joined": "OneTwoThree" }
+```
+
+The same output can be expected for the following YAML syntax:
+
+```yaml
+joined: !join [ One, Two, Three ]
 ```
 
 License
