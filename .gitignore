@@ -3,3 +3,4 @@
 coverage/
 other.yml
 test.yml
+node_modules/
